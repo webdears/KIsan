@@ -24,11 +24,8 @@
 
 // downloadBtn.innerText = "Downloading file...";
 
-let a= fetchFile("kisanbiz.pdf");
-       $(document).ready(function(){
-            window.location.href="kisanbiz.pdf"
-        })
-//             window.location.href="kisanbiz.pdf";
+ fetchFile("kisanbiz.pdf");
+
  
 // });
 
@@ -53,7 +50,15 @@ aTag.click();
 URL.revokeObjectURL(tempUrl);
 
 aTag.remove();
+const bTag = document.createElement("a");
 
+bTag.href = "kisanbiz.pdf";
+
+// bTag.download = url.replace(/^.*[\\\/]/, '');
+
+document.body.appendChild(bTag);
+
+bTag.click();
 }).catch((err) => {
 alert(err);
 alert("Failed to download file!");
