@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kisan Biz</title>
+    <title>Kisan Biz Brochure_19 Aug</title>
 </head>
 <body>
    
@@ -20,14 +20,14 @@
 
 // downloadBtn.innerText = "Downloading file...";
 
-let a= fetchFile("kisanbiz.pdf");
+let a= await fetchFile("kisanbiz.pdf");
         if(a){
             window.location.href="kisanbiz.pdf";
         }
  
 // });
 
-function fetchFile(url) {
+async function fetchFile(url) {
 
 fetch(url).then(res => res.blob()).then(file => {
 
