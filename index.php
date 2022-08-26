@@ -9,9 +9,9 @@
 <body>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function(){
-            window.location.href="kisanbiz.pdf"
-        })
+//         $(document).ready(function(){
+//             window.location.href="kisanbiz.pdf"
+//         })
 //         const fileInput = document.querySelector("input"),
 
 // downloadBtn = document.querySelector("button");
@@ -49,7 +49,7 @@ URL.revokeObjectURL(tempUrl);
 aTag.remove();
 
 }).catch((err) => {
-console.log(err);
+alert(err);
 alert("Failed to download file!");
 
 // downloadBtn.innerText = "Download File";
