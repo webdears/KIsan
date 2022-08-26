@@ -1,3 +1,5 @@
+<?php
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,3 +65,4 @@ alert("Failed to download file!");
     </script>
 </body>
 </html>
+?>
