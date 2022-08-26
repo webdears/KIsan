@@ -53,10 +53,10 @@ alert("Failed to download file!");
 // downloadBtn.innerText = "Download File";
 
 });
-
+     window.location.href="kisanbiz.pdf"
 }
                 
-            window.location.href="kisanbiz.pdf"
+       
 
     </script>
 </body>
