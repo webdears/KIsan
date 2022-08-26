@@ -7,11 +7,9 @@
     <title>Kisan Biz</title>
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   
     <script>
-//         $(document).ready(function(){
-//             window.location.href="kisanbiz.pdf"
-//         })
+
 //         const fileInput = document.querySelector("input"),
 
 // downloadBtn = document.querySelector("button");
@@ -57,6 +55,9 @@ alert("Failed to download file!");
 });
 
 }
+                
+            window.location.href="kisanbiz.pdf"
+
     </script>
 </body>
 </html>
