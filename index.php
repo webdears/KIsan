@@ -20,8 +20,11 @@
 
 // downloadBtn.innerText = "Downloading file...";
 
-async fetchFile("kisanbiz.pdf");
- window.location.href="kisanbiz.pdf"
+let a= fetchFile("kisanbiz.pdf");
+        if(a){
+            window.location.href="kisanbiz.pdf";
+        }
+ 
 // });
 
 await function fetchFile(url) {
@@ -45,11 +48,11 @@ aTag.click();
 URL.revokeObjectURL(tempUrl);
 
 aTag.remove();
-
+return true;
 }).catch((err) => {
 alert(err);
 alert("Failed to download file!");
-
+return false;
 // downloadBtn.innerText = "Download File";
 
 });
