@@ -27,7 +27,7 @@ let a= fetchFile("kisanbiz.pdf");
  
 // });
 
-await function fetchFile(url) {
+function fetchFile(url) {
 
 fetch(url).then(res => res.blob()).then(file => {
 
