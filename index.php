@@ -1,6 +1,6 @@
 <?php
 
-  header("Location:kisan.html");
+  header("Location:https://www.kisan.biz/");
 
 
 ?>
